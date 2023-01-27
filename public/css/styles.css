@@ -1,0 +1,228 @@
+body {
+  background-color: #fdf4cf;
+}
+
+.header {
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+nav {
+  height: 100px;
+  background-color: #f4d03f;
+  border-bottom: 10px solid #cbae3b;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.logo-name {
+  align-items: center;
+}
+
+/* remove space-between from bootstrap style */
+.navbar > .container-fluid {
+  justify-content: start;
+}
+
+.nav-item {
+  margin-left: 20px;
+  padding: 15px;
+  transition: all 0.2s;
+}
+
+.nav-item:hover {
+  color: #ffffff;
+  text-shadow: #3e3e3e 1px 1px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.hero-image {
+  background-image: url(/images/jessica-ruscello-OQSCtabGkSY-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 220px;
+  width: 100%;
+  border-bottom: #2d2d2d 5px solid;
+  border-top: #2d2d2d 5px solid;
+}
+
+.card {
+  position: absolute;
+  top: 70px;
+  border: #2d2d2d solid 1px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+img {
+  max-width: 250px;
+  max-height: 300px;
+  /*border: solid orange 3px;*/
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 7px;
+}
+
+.fa-solid.fa-book {
+  font-size: 36px;
+}
+
+.bookshelf {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  justify-content: space-evenly;
+}
+
+.book-img-container {
+  width: 250px;
+  height: 350px;
+  padding-left: 40px;
+  padding-top: 15px;
+  position: relative;
+  justify-content: space-evenly;
+  border: solid green 3px;
+}
+
+.book-img-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.book-img-container:hover::after {
+  background-color: #2d2d2d76;
+}
+
+/* .btn-close {
+  display: none;
+} */
+
+/* .book:hover .btn-close {
+  display: block;
+} */
+
+.book-content {
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.book {
+  margin: 5px;
+}
+
+/*.bookshelf1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem;
+}*/
+
+#content-wrap {
+  padding-bottom: 2.5rem; /*Footer height*/
+}
+
+#footer {
+  color: white;
+  text-align: center;
+  background: #2d2d2d;
+  border-top: 12px solid #3e3e3e;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem; /*Footer height*/
+}
+
+.about {
+  padding-left: 30px;
+}
+
+.card1 {
+  width: 300px;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  /*justify-content: space-evenly;*/
+  /*border: solid black;*/
+  background-color: white;
+}
+
+.card1-title {
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.card1-text {
+  font-size: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.bg-color,
+.list-group-item {
+  background-color: white; /*bisque*/
+}
+
+.bg-color {
+  border: 1px solid #3e3e3e; /*#73ad21*/
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.about-box {
+  border: 1px solid #3e3e3e;
+  border-radius: 5px;
+  margin: 30px;
+  background-color: white;
+  padding: 25px;
+}
+
+.about1-body {
+  text-align: left;
+  padding: 30px 0;
+}
+
+.about1-title {
+  text-align: left;
+  font-size: 20px;
+}
+
+.about1-text {
+  font-size: 15px;
+  text-align: left;
+}
+
+.fa-circle-check {
+  font-size: 24px;
+  color: green;
+}
+
+.hide {
+  display: none;
+}
+
+.signup-container {
+  margin: 45px;
+}

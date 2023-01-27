@@ -1,0 +1,52 @@
+
+{{!-- userBookshelf comes from the homeroutes, inside the render method --}}
+{{#with userBookshelf}}
+
+<div class="header">
+<h1>Welcome back, <span id="docTitle">{{user_name}}</span>!</h1>
+<br>
+</div>
+
+{{> addbookForm}}
+
+<section class="bookshelf">
+{{#each books}}
+  <div class="book" data-book-id="{{id}}">
+
+    <div class="card1 bg-color" style="width: 16rem;">
+
+      {{!-- conditionally render image --}}
+      {{#if image_url}}
+      <img src="{{image_url}}" alt="{{name}} by {{author}}">
+      {{else}}
+      <img src="/images/unavailable-cover.jpg" alt="{{name}} by {{author}}">
+      {{/if}}
+        
+      <ul class="list-group list-group-flush">
+        <h5 class="card1-title">{{name}}</h5>
+        <p class="card1-text">{{author}}</p>
+        <p class="card1-text">
+
+        <li class="list-group-item">Date added: {{format_date createdAt}}</li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center"><button class="btn btn-primary" id="readBtn" data-is-read="{{is_read}}">Mark Read</button>
+          {{#if is_read}}
+          <span>
+            <i class="fa-solid fa-circle-check"></i>
+          </span>
+          {{else}}
+          <span class="hide">
+            <i class="fa-solid fa-circle-check"></i>
+          </span>
+          {{/if}}
+
+        </li>
+        <li class="list-group-item"><a href="/reviews/{{id}}" class="btn btn-primary">Write A Review</a></li>
+        <li class="list-group-item"><button class="btn btn-primary" id="deleteBtn">Delete Book</button></li>
+      </ul>
+    </div>
+  </div>
+{{/each}}
+</section>
+
+{{/with}}
